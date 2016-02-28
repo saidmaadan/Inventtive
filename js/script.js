@@ -11,7 +11,7 @@ $(document).ready(function(){
 		var category = $(this).text().toLowerCase().replace(' ','-');
 		
 		// Remove hidden class if 'all-projects' is selected
-		if(category == 'all-projects'){
+		if(category == 'all'){
 			$('ul#gallery li:hidden').fadeIn('slow').removeClass('hidden');
 		} else {
 			$('ul#gallery li').each(function(){

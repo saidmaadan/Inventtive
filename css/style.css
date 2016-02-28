@@ -46,7 +46,7 @@ a{
 	left:0;
 	padding:20px;
 	background:7f7f7f;
-	background: rgba(48, 166, 241, 0.5);
+	background: rgba(92, 99, 103, 0.5);
 	color: #fff;
 }
 .slide-copy h2 a{
@@ -114,7 +114,7 @@ header nav ul{
 	float:right;
 }
 
-header nav li{
+header nav ol{
 	list-style:none;
 	float:left;
 	padding:0 20px;
@@ -222,17 +222,10 @@ footer{
 	padding:0;
 }
 
-@media(max-width: 768px){
-	.logo, nav{
-		float:none;
-		width:100%;
-		text-align:center;
-	}
-	
-	nav ul, nav li{
-		float:none;
-		padding:0;
-	}
+nav ul, nav li{
+	float:none;
+	padding:0;
+}
 	
 	nav li{
 		margin-bottom:15px;
@@ -243,7 +236,7 @@ footer{
 		margin-right:8px;
 	}
 }
-
+ /*--------------Media Query--------------------------------*/
 @media(max-width: 1140px){
 	article nav{
 	width: 50%;
@@ -262,22 +255,38 @@ footer{
 	margin: auto; 
 	}
 }
-@media(max-width: 870px){
-	header nav{
-	display:none;
-	}
-}
 @media(max-width: 530px){
 	article nav{
 	width: 95%;
 	margin: auto; 
 	}
 }
+@media(max-width: 870px){
+	header .logo{
+		font-size: 20px;
+	}
+	header nav ol{
+		font-size: 15px;
+	/*display: none;*/
+	}
+}
+@media(max-width: 634px){
+	header .logo{
+		font-size: 35px;
+		float:none;
+		width:100%;
+		text-align:center;
+	}
+	header nav{
+	display: none;
+	}
+}
+
 @media(max-width: 530px){
 	.tagline h1{
 	text-align:center;
 	font-size:20px;
-}
+	}
 }
 
 
